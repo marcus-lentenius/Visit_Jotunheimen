@@ -17,8 +17,6 @@ div.menu {
     width: 100%;
     height: 40px;
     position: fixed;
-    vertical-align: middle;
-    top: 0;
 }
 
 div.menu_drop_down {

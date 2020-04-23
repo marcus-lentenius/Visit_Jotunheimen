@@ -1,5 +1,4 @@
 .content_wrapper {
-    height: 150vh;
     position: relative;
 }
 
@@ -9,18 +8,17 @@
     perspective: 1px;
 }
 
-.background{
+.background {
     border-top: solid white 20px;
     height: 110vh;
-    width: 100%;
+    width: calc(100% / 1.066 );
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
-    transform: translateZ(-1px) scale(2.1);
+    transform: translateZ(-1px) scale(2.2);
 }
-
 .bg_image_1 {
     background-image: url("../img/lake.jpg");
 }
