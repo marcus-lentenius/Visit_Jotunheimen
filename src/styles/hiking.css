@@ -1,0 +1,81 @@
+.content_wrapper {
+    height: 150vh;
+    position: relative;
+}
+
+.bg_wrapper {
+    height: 120vh;
+    position: relative;
+    perspective: 1px;
+}
+
+.background{
+    border-top: solid white 20px;
+    height: 110vh;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    transform: translateZ(-1px) scale(2.1);
+}
+
+.bg_image_1 {
+    background-image: url("../img/lake.jpg");
+}
+
+.bg_image_2 {
+    background-image: url("../img/valley_grass.jpg");
+}
+.bg_image_3{
+    background-image: url("../img/mountain_panorama.jpg");
+}
+.bg_image_4{
+    background-image: url("../img/forest.jpg");
+}
+
+/*<editor-fold desc="LEFT_BOX">*/
+div.left_text_wrapper {
+    z-index: 999;
+    left: 5%;
+    position: absolute;
+    top: 40vh;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+}
+
+h2.left_box_header {
+    font-size: 25px;
+    margin: 0;
+}
+
+p.left_box_para {
+    margin: 0;
+}
+
+/*</editor-fold>*/
+/*<editor-fold desc="RIGHT_BOX">*/
+div.right_text_wrapper {
+    z-index: 999;
+    right: 5%;
+    position: absolute;
+    top: 80vh;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+}
+
+h2.right_box_header {
+    font-size: 25px;
+    margin: 0;
+}
+
+p.right_box_para {
+    margin: 0;
+}
+
+/*</editor-fold>*/
+
+
+body {
+}
