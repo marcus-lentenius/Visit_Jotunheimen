@@ -1,13 +1,3 @@
-.content_wrapper {
-    position: relative;
-}
-
-.bg_wrapper {
-    height: 120vh;
-    position: relative;
-    perspective: 1px;
-}
-
 .background {
     border-top: solid white 20px;
     height: 123vh;
@@ -19,29 +9,9 @@
     position: absolute;
     transform: translateZ(-2px) scale(2.9);
 }
-.bg_image_1 {
-    background-image: url("../img/lake.jpg");
-}
-
-.bg_image_2 {
-    background-image: url("../img/valley_grass.jpg");
-}
-.bg_image_3{
-    background-image: url("../img/mountain_panorama.jpg");
-}
-.bg_image_4{
-    background-image: url("../img/forest.jpg");
-}
 
 /*<editor-fold desc="LEFT_BOX">*/
-div.left_text_wrapper {
-    z-index: 999;
-    left: 5%;
-    position: absolute;
-    top: 40vh;
-    background: rgba(255, 255, 255, 0.5);
-    padding: 20px;
-}
+
 
 h2.left_box_header {
     font-size: 25px;
@@ -52,15 +22,87 @@ p.left_box_para {
     margin: 0;
 }
 
+div.left_text_wrapper {
+    background: rgba(255, 0, 255, 0.5);
+    top: 50vh;
+    padding: 20px;
+    float: left;
+    margin-left: 10%;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.parallax_wrapper {
+    position: absolute;
+    perspective: 1px;
+}
+
+.bg_image_1,
+.bg_image_2,
+.bg_image_3,
+.bg_image_4 {
+    height: 140vh;
+    min-width: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.bg_image_1 {
+    background-image: url("../img/lake.jpg");
+}
+
+.bg_image_2 {
+    background-image: url("../img/valley_grass.jpg");
+}
+
+.bg_image_3 {
+    background-image: url("../img/mountain_panorama.jpg");
+}
+
+.bg_image_4 {
+    background-image: url("../img/forest.jpg");
+}
+
+div.bg_wrapper {
+    height: 100vh;
+    position: absolute;
+}
+
+
+
+div.bg_image_wrapper {
+    overflow: hidden;
+    max-height: 100vh;
+    height: 100vh
+}
+div.start_bg_image_wrapper {
+    overflow: hidden;
+    max-height: 120vh;
+    height: 120vh
+}
+
+div.parallax {
+    perspective: 1px;
+}
+
+
 /*</editor-fold>*/
+.content_wrapper {
+    height: 100vh;
+    width: 100vw;
+}
+
 /*<editor-fold desc="RIGHT_BOX">*/
 div.right_text_wrapper {
-    z-index: 999;
-    right: 5%;
-    position: absolute;
-    top: 80vh;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 0, 0.5);
     padding: 20px;
+    top: 80vh;
+    float: right;
+    margin-right: 10%;
+    position: relative;
+    box-sizing: border-box;
 }
 
 h2.right_box_header {
@@ -76,4 +118,5 @@ p.right_box_para {
 
 
 body {
+    overflow-x:hidden;
 }
