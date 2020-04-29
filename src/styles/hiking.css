@@ -10,14 +10,14 @@
 
 .background {
     border-top: solid white 20px;
-    height: 110vh;
-    width: calc(100% / 1.066 );
+    height: 123vh;
+    width: 100%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
-    transform: translateZ(-1px) scale(2.2);
+    transform: translateZ(-2px) scale(2.9);
 }
 .bg_image_1 {
     background-image: url("../img/lake.jpg");

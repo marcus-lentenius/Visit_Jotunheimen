@@ -1,6 +1,4 @@
 /*<editor-fold desc="MENU">*/
-
-
 .collapse:not(.show) {
     display: none
 }
@@ -60,14 +58,6 @@ div.drop_menu_wrapper {
 div.drop_menu_wrapper:hover {
     cursor: pointer;
 }
-
-p.menu_text {
-    float: right;
-    color: #707070;
-    font-size: 20px;
-    margin: 10px;
-}
-
 
 p.menu_links {
     color: white;
@@ -173,6 +163,13 @@ div.categories_wrapper {
     }
 }
 
+div.category_hiking_wrapper:hover,
+div.category_lodging_wrapper:hover,
+div.category_forest_wrapper:hover,
+div.category_skiing_wrapper:hover  {
+    opacity: 0.9;
+    cursor: pointer;
+}
 div.category_hiking_wrapper,
 div.category_lodging_wrapper,
 div.category_forest_wrapper,
@@ -191,6 +188,9 @@ div.category_lodging_wrapper {
 
 div.category_hiking_wrapper {
     background-image: url("../img/lake.jpg");
+}
+div.category_hiking_wrapper:hover {
+    cursor: pointer;
 }
 
 div.category_forest_wrapper {
@@ -262,7 +262,7 @@ div.todo_links_wrapper {
 }
 
 div.todo_links_target_wrapper:hover {
-    opacity: 1;
+    opacity: 0.9;
     cursor: pointer;
 }
 
@@ -272,7 +272,7 @@ div.todo_links_target_wrapper {
     background-size: cover;
     background-position: center;
     flex-grow: 1;
-    opacity: 0.9;
+    opacity: 1;
     border: white 1px solid;
     margin: 0;
 }
@@ -299,23 +299,17 @@ h2.todo_link_header {
 
 #short_info_section {
     width: 100%;
-    background: white;
+    background:  #f5fff9;
     margin-bottom: 25px;
 }
 
+h2.short_info_title {
+    text-align: center;
+    font-weight: 300;
+    font-size: 30px;
+}
 
 img.linkedIn_icon {
     width: 40px;
     filter: grayscale(10);
-}
-
-
-body {
-    margin: 0;
-    background: #f5fff9;
-    font-family: Calibri, serif;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 500;
 }

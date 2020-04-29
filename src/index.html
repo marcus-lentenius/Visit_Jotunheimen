@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="keywords" content="Jotunheimen, Norway, Hiking, Nature">
+    <meta name="description" content="Info about Jotunheimen">
+    <meta name="author" content="Marcus Lentenius">
+
     <title>Visit Jotunheimen</title>
     <!-- Latest compiled and minified CSS -->
     <!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">-->
@@ -30,9 +34,7 @@
             <div class="drop_menu_icon"></div>
             <div class="drop_menu_icon"></div>
         </div>
-        <p class="menu_text">
-            Visit Jotunheimen
-        </p>
+        <a class="home" href="index.html">Visit Jotunheimen</a>
     </div>
     <div id="demo" class="menu_drop_down collapse">
         <a class="menu_links" href=""> Språk </a>
@@ -67,7 +69,7 @@
 
 <section>
     <div class="categories_wrapper">
-        <div class="category_hiking_wrapper">
+        <div class="category_hiking_wrapper" onclick="location.href='hiking.html'">
             <div class="category_text_wrapper">
                 <h2 class="category_header">
                     Hiking
@@ -111,11 +113,7 @@
 </section>
 
 <section id="short_info_section">
-
-    <div>
-        Aktiviteter
-    </div>
-
+    <h2 class="short_info_title">Aktiviteter</h2>
 </section>
 
 <section id="todo_section">
@@ -164,8 +162,27 @@
     </div>
 </section>
 
-<footer>
-    <div class="footer">
+<footer class="footer">
+
+    <div class="newsletter_wrapper">
+        <form action="">
+            <fieldset class="newsletter_set">
+                <legend class="newsletter_head">Interested in our newsletter?</legend>
+                <input class="newsletter_textfield" type="text" placeholder="Your name:"><br>
+                <input class="newsletter_textfield" type="text" placeholder="Your email-address:"><br>
+                <input class="newsletter_submit" type="submit" value="Submit">
+            </fieldset>
+        </form>
+    </div>
+    <div class="social_media_wrapper">
+        <p class="menu_links"> f<br>i<br>t</p>
+    </div>
+    <div class="footer_links_wrapper">
+        <a class="footer_links" href="">Home</a>
+        <br>
+        <a class="footer_links" href="">Info</a>
+        <br>
+        <a class="footer_links" href="">Contact</a>
     </div>
 </footer>
 
