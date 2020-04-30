@@ -7,17 +7,11 @@
     <meta name="description" content="Info about Jotunheimen">
     <meta name="author" content="Marcus Lentenius">
 
+    <link rel="shortcut icon" href="img/favicon.png"/>
     <title>Visit Jotunheimen</title>
-    <!-- Latest compiled and minified CSS -->
-    <!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">-->
 
-    <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-    <!-- Popper JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-
-    <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
     <link rel="stylesheet" href="styles/index.css"/>
@@ -48,10 +42,7 @@
             Välkommen till Jotunheimen
         </h2>
         <p class="welcome_para">
-            Här är det kul
-            och fint
-            osv
-            osv
+            Norges mest besökta naturreservat
         </p>
     </div>
 </header>
@@ -69,7 +60,7 @@
 
 <section>
     <div class="categories_wrapper">
-        <div class="category_hiking_wrapper" onclick="location.href='hiking.html'">
+        <div class="category_hiking_wrapper" onclick="location.href='hiking.html#hiking'">
             <div class="category_text_wrapper">
                 <h2 class="category_header">
                     Hiking
@@ -79,7 +70,7 @@
                 </p>
             </div>
         </div>
-        <div class="category_lodging_wrapper">
+        <div class="category_lodging_wrapper" onclick="location.href='hiking.html#skiing'">
             <div class="category_text_wrapper">
                 <h2 class="category_header">
                     Lodging
@@ -89,7 +80,7 @@
                 </p>
             </div>
         </div>
-        <div class="category_forest_wrapper">
+        <div class="category_forest_wrapper" onclick="location.href='hiking.html#lodging'">
             <div class="category_text_wrapper">
                 <h2 class="category_header">
                     Wood
@@ -99,7 +90,7 @@
                 </p>
             </div>
         </div>
-        <div class="category_skiing_wrapper">
+        <div class="category_skiing_wrapper" onclick="location.href='hiking.html#forest_trail'">
             <div class="category_text_wrapper">
                 <h2 class="category_header">
                     Freeriding
@@ -112,77 +103,26 @@
     </div>
 </section>
 
-<section id="short_info_section">
-    <h2 class="short_info_title">Aktiviteter</h2>
-</section>
-
-<section id="todo_section">
-    <div class="todo_links_wrapper">
-
-        <div class="todo_links_target_wrapper">
-            <h2 class="todo_link_header">
-                titta här
-            </h2>
-        </div>
-        <div class="todo_links_target_wrapper">
-            <h2 class="todo_link_header">
-                titta här för att kampa osv
-            </h2>
-        </div>
-        <div class="todo_links_target_wrapper">
-            <h2 class="todo_link_header">
-                titta här
-            </h2>
-        </div>
-        <div class="todo_links_target_wrapper">
-            <h2 class="todo_link_header">
-                titta här för att kampa osv
-            </h2>
-        </div>
-        <div class="todo_links_target_wrapper">
-            <h2 class="todo_link_header">
-                titta här
-            </h2>
-        </div>
-        <div class="todo_links_target_wrapper">
-            <h2 class="todo_link_header">
-                titta här för att kampa osv
-            </h2>
-        </div>
-        <div class="todo_links_target_wrapper">
-            <h2 class="todo_link_header">
-                titta här
-            </h2>
-        </div>
-        <div class="todo_links_target_wrapper">
-            <h2 class="todo_link_header">
-                titta här för att kampa osv
-            </h2>
-        </div>
-    </div>
-</section>
-
 <footer class="footer">
-
-    <div class="newsletter_wrapper">
-        <form action="">
-            <fieldset class="newsletter_set">
-                <legend class="newsletter_head">Interested in our newsletter?</legend>
-                <input class="newsletter_textfield" type="text" placeholder="Your name:"><br>
-                <input class="newsletter_textfield" type="text" placeholder="Your email-address:"><br>
-                <input class="newsletter_submit" type="submit" value="Submit">
-            </fieldset>
-        </form>
+    <div class="footer_links_wrapper">
+        <div class="footer_links_centering">
+            <a class="footer_links" href="">Home</a>
+            <br>
+            <a class="footer_links" href="">Info</a>
+            <br>
+            <a class="footer_links" href="">Contact</a>
+        </div>
     </div>
     <div class="social_media_wrapper">
-        <p class="menu_links"> f<br>i<br>t</p>
-    </div>
-    <div class="footer_links_wrapper">
-        <a class="footer_links" href="">Home</a>
-        <br>
-        <a class="footer_links" href="">Info</a>
-        <br>
-        <a class="footer_links" href="">Contact</a>
+        <a class="social_media_link" href="https://twitter.com/jotunheimen_com">
+            <img class="social_media_icon" src="img/twitter.png"/>
+        </a>
+        <a class="social_media_link" href="https://www.facebook.com/Jotunheimennorway/">
+            <img class="social_media_icon" src="img/facebook.png"/>
+        </a>
+        <a class="social_media_link" href="https://www.instagram.com/visitjotunheimen/">
+            <img class="social_media_icon" src="img/instagram.png"/>
+        </a>
     </div>
 </footer>
 

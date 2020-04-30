@@ -1,29 +1,15 @@
-.background {
-    border-top: solid white 20px;
-    height: 123vh;
-    width: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-    transform: translateZ(-2px) scale(2.9);
-}
-
-/*<editor-fold desc="LEFT_BOX">*/
-
-
 h2.left_box_header {
-    font-size: 25px;
+    font-size: 70%;
     margin: 0;
 }
 
 p.left_box_para {
+    font-size: 50%;
     margin: 0;
 }
 
 div.left_text_wrapper {
-    background: rgba(255, 0, 255, 0.5);
+    background: rgba(255, 255, 255, 0.5);
     top: 50vh;
     padding: 20px;
     float: left;
@@ -50,53 +36,42 @@ div.left_text_wrapper {
 }
 
 .bg_image_1 {
-    background-image: url("../img/lake.jpg");
+    background-position-y: -330px;
+    background-image: url("../img/hiking.jpg");
 }
 
 .bg_image_2 {
-    background-image: url("../img/valley_grass.jpg");
+    background-position-y: -100px;
+    background-image: url("../img/freeride.jpg");
 }
 
 .bg_image_3 {
-    background-image: url("../img/mountain_panorama.jpg");
+    background-position-y: -150px;
+    background-image: url("../img/cabin.jpg");
 }
 
 .bg_image_4 {
-    background-image: url("../img/forest.jpg");
+    background-position-y: -210px;
+    background-image: url("../img/trail.jpg");
 }
-
-div.bg_wrapper {
-    height: 100vh;
-    position: absolute;
-}
-
-
 
 div.bg_image_wrapper {
     overflow: hidden;
     max-height: 100vh;
     height: 100vh
 }
+
 div.start_bg_image_wrapper {
     overflow: hidden;
     max-height: 120vh;
-    height: 120vh
+    height: 120vh;
 }
-
-div.parallax {
-    perspective: 1px;
-}
-
-
-/*</editor-fold>*/
 .content_wrapper {
     height: 100vh;
     width: 100vw;
 }
-
-/*<editor-fold desc="RIGHT_BOX">*/
 div.right_text_wrapper {
-    background: rgba(255, 255, 0, 0.5);
+    background: rgba(255, 255, 255, 0.5);
     padding: 20px;
     top: 80vh;
     float: right;
@@ -114,9 +89,6 @@ p.right_box_para {
     margin: 0;
 }
 
-/*</editor-fold>*/
-
-
 body {
-    overflow-x:hidden;
+    overflow-x: hidden;
 }

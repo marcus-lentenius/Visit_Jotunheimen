@@ -179,6 +179,7 @@ div.category_skiing_wrapper {
     margin: 0 5px 10px 5px;
     flex-grow: 1;
     position: relative;
+    transition: opacity .2s ease-in-out;
 }
 
 /*<editor-fold desc="BG_IMG">*/
@@ -275,6 +276,7 @@ div.todo_links_target_wrapper {
     opacity: 1;
     border: white 1px solid;
     margin: 0;
+    transition: opacity .2s ease-in-out;
 }
 
 
