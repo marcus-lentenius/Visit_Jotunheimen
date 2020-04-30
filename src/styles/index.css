@@ -71,7 +71,6 @@ div.categories_wrapper {
     flex-wrap: wrap;
     margin: 0 auto 50px;
     justify-content: center;
-    /*align-items: stretch;*/
 }
 
 @media only screen and (max-width: 750px) {

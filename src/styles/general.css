@@ -75,7 +75,6 @@ div.footer_links_wrapper {
 a.footer_links {
     color: #707070;
     font-size: 20px;
-    /*margin-top: -10px;*/
     text-decoration: none;
 }
 
@@ -89,14 +88,12 @@ div.footer_links_centering {
 footer.footer {
     display: flex;
     justify-content: center;
-    /*width: 100%;*/
     padding: 25px 0;
     background-color: #d3d3d3;
     border-top: #bcbcbc 3px solid;
 }
 
 a.home {
-    /*float: right;*/
     font-size: 20px;
     top: 4px;
     position: relative;
