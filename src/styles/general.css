@@ -11,19 +11,22 @@
 }
 
 div.menu {
-    z-index: 999;
+    text-align: right;
+    z-index: 1;
     background-color: #ced7de;
     border-bottom: #c2cad1 3px solid;
     width: 100%;
     height: 40px;
     position: fixed;
+    top: 0;
 }
 
 div.menu_drop_down {
     width: 100%;
     top: 40px;
     position: fixed;
-    z-index: 998;
+    text-align: right;
+    z-index: 1;
     background-color: #c2cad1;
     border-bottom: #7f9da1 solid 3px;
 }
@@ -31,8 +34,7 @@ div.menu_drop_down {
 div.drop_menu_icon {
     width: 20px;
     height: 2px;
-    margin-bottom: 3px;
-    margin-top: 3px;
+    margin-bottom: 4px;
     background-color: white;
 }
 
@@ -40,25 +42,20 @@ div.drop_menu_icon {
 a.menu_links {
     color: #707070;
     text-decoration: none;
-    margin: 2px 17px 2px 0;
+    margin-right: 10px;
     font-size: 15px;
-    float: right;
+    position: relative;
+    bottom: 3px;
 }
 
 div.drop_menu_wrapper {
     padding-left: 10px;
-    padding-top: 11px;
+    padding-top: 14px;
     float: left;
 }
 
 div.drop_menu_wrapper:hover {
     cursor: pointer;
-}
-
-p.menu_text {
-    float: right;
-    font-size: 20px;
-    margin: 10px;
 }
 
 div.social_media_wrapper {
@@ -71,7 +68,6 @@ div.social_media_wrapper {
 }
 
 div.footer_links_wrapper {
-    /*text-align: center;*/
     flex-basis: 50%;
     max-width: 300px;
 }
@@ -79,29 +75,31 @@ div.footer_links_wrapper {
 a.footer_links {
     color: #707070;
     font-size: 20px;
-    margin-top: -10px;
+    /*margin-top: -10px;*/
     text-decoration: none;
 }
 
 div.footer_links_centering {
     display: inline-block;
     position: relative;
-    left: calc(50%);
+    left: 50%;
     transform: translateX(-50%);
 }
 
 footer.footer {
     display: flex;
     justify-content: center;
-    width: 100%;
+    /*width: 100%;*/
     padding: 25px 0;
     background-color: #d3d3d3;
     border-top: #bcbcbc 3px solid;
 }
 
 a.home {
-    float: right;
+    /*float: right;*/
     font-size: 20px;
+    top: 4px;
+    position: relative;
     margin: 10px;
     color: #707070;
     text-decoration: none;
@@ -115,7 +113,6 @@ body {
     margin: 0;
     background: #f5fff9;
     font-family: Calibri, serif;
-
 }
 
 h1, h2, h3, h4, h5, h6 {
