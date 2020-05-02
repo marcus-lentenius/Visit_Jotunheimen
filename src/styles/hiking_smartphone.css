@@ -23,36 +23,35 @@
 /*hiking*/
 p.hiking_left_box_para {
     margin: 0 0 5px 0;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 h2.hiking_left_box_header {
-    font-size: 25px;
+    font-size: 20px;
     margin: 0;
 }
+
+/*e*/
 h2.hiking_second_right_box_header {
-    font-size: 22px;
+    font-size: 20px;
     margin: 0;
 }
 
 div.hiking_left_text_wrapper {
-    background: rgba(255, 255, 255, 0.7);
-    border-radius: 15px;
-    top: 50vh;
+    background: rgba(255, 255, 255, 1);
     padding: 20px;
-    float: left;
-    max-width: 30%;
-    margin-left: 10%;
+    height: 30vh;
+    bottom: -45vh;
     position: relative;
     box-sizing: border-box;
 }
 p.skiing_left_box_para {
     margin: 0 0 5px 0;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 h2.skiing_left_box_header {
-    font-size: 25px;
+    font-size: 20px;
     margin: 0;
 }
 h2.skiing_second_right_box_header {
@@ -61,19 +60,16 @@ h2.skiing_second_right_box_header {
 }
 
 div.skiing_left_text_wrapper {
-    background: rgba(255, 255, 255, 0.7);
-    border-radius: 15px;
-    top: 90vh;
+    background: rgba(255, 255, 255, 1);
     padding: 20px;
-    float: left;
-    max-width: 30%;
-    margin-left: 10%;
     position: relative;
+    height: 30vh;
+    bottom: -70vh;
     box-sizing: border-box;
 }
 
 h2.lodging_left_box_header {
-    font-size: 25px;
+    font-size: 20px;
     margin: 0;
 }
 h2.lodging_second_right_box_header {
@@ -83,22 +79,22 @@ h2.lodging_second_right_box_header {
 
 p.lodging_left_box_para {
     margin: 0 0 5px 0;
-    font-size: 18px;
+    font-size: 14px;
 }
-
 div.lodging_left_text_wrapper {
-    background: rgba(255, 255, 255, 0.7);
-    border-radius: 15px;
-    top: 70vh;
+    background: rgba(255, 255, 255, 1);
     padding: 20px;
-    float: left;
-    max-width: 30%;
-    margin-left: 5%;
+    height: 30vh;
+    bottom: -70vh;
     position: relative;
     box-sizing: border-box;
 }
+p.trail_left_box_para {
+    margin: 0 0 5px 0;
+    font-size: 14px;
+}
 h2.trail_left_box_header {
-    font-size: 25px;
+    font-size: 20px;
     margin: 0;
 }
 h2.trail_second_right_box_header {
@@ -107,15 +103,10 @@ h2.trail_second_right_box_header {
 }
 
 div.trail_left_text_wrapper {
-    background: rgba(255, 255, 255, 0.7);
-    border-radius: 15px;
-    top: 30vh;
+    background: rgba(255, 255, 255, 1);
+    top: 80vh;
+    height: 20vh;
     padding: 20px;
-    /*float: left;*/
-    max-width: 30%;
-    /*margin-left: 5%;*/
-    left: 50%;
-    transform: translateX(-50%);
     position: relative;
     box-sizing: border-box;
 }
@@ -131,20 +122,21 @@ div.trail_left_text_wrapper {
 
 p.skiing_right_box_para {
     margin: 0;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 h2.skiing_right_box_header {
-    font-size: 25px;
+    font-size: 20px;
     margin: 0;
 }
 
 div.skiing_right_text_wrapper {
+    visibility: hidden;
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.7);
     padding: 20px;
     max-width: 30%;
-    top: 50vh;
+    top: 80vh;
     float: right;
     margin-right: 10%;
     position: relative;
@@ -164,7 +156,7 @@ div.skiing_right_text_wrapper {
 div.bg_image_1,
 div.bg_image_2,
 div.bg_image_3 {
-    height: 140vh;
+    height: 70vh;
     min-width: 100vw;
     background-position: center;
     background-repeat: no-repeat;
@@ -173,17 +165,19 @@ div.bg_image_3 {
 }
 
 div.bg_image_1 {
-    background-position-y: -280px;
+    background-position-x: 66%;
+    height: 50vh;
     background-image: url("../img/hiking.jpg");
 }
 
 div.bg_image_2 {
-    background-position-y: -150px;
     background-image: url("../img/freeride.jpg");
 }
 
 div.bg_image_3 {
+    height: 100vh;
     background-position-y: -150px;
+    background-position-x: 30%;
     background-image: url("../img/cabin.jpg");
 }
 
@@ -191,18 +185,20 @@ div.bg_image_4 {
     background-image: url("../img/trail.jpg");
     background-position: center;
     background-size: cover;
+    background-position-y: 80vh;
+
 }
 
 div.start_bg_image_wrapper {
     overflow: hidden;
-    max-height: 120vh;
-    height: 120vh;
+    max-height: 100vh;
+    height: 100vh;
 }
 
 div.bg_image_wrapper {
     overflow: hidden;
     max-height: 100vh;
-    height: 100vh
+    height: 100vh;
 }
 
 div.end_bg_image_wrapper {

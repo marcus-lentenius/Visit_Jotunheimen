@@ -23,36 +23,38 @@
 /*hiking*/
 p.hiking_left_box_para {
     margin: 0 0 5px 0;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 h2.hiking_left_box_header {
-    font-size: 25px;
+    font-size: 20px;
     margin: 0;
 }
+
+/*e*/
 h2.hiking_second_right_box_header {
-    font-size: 22px;
+    font-size: 20px;
     margin: 0;
 }
 
 div.hiking_left_text_wrapper {
     background: rgba(255, 255, 255, 0.7);
     border-radius: 15px;
-    top: 50vh;
+    top: 40vh;
     padding: 20px;
     float: left;
-    max-width: 30%;
-    margin-left: 10%;
+    max-width: 40%;
+    margin-left: 5%;
     position: relative;
     box-sizing: border-box;
 }
 p.skiing_left_box_para {
     margin: 0 0 5px 0;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 h2.skiing_left_box_header {
-    font-size: 25px;
+    font-size: 20px;
     margin: 0;
 }
 h2.skiing_second_right_box_header {
@@ -73,7 +75,7 @@ div.skiing_left_text_wrapper {
 }
 
 h2.lodging_left_box_header {
-    font-size: 25px;
+    font-size: 20px;
     margin: 0;
 }
 h2.lodging_second_right_box_header {
@@ -83,9 +85,8 @@ h2.lodging_second_right_box_header {
 
 p.lodging_left_box_para {
     margin: 0 0 5px 0;
-    font-size: 18px;
+    font-size: 14px;
 }
-
 div.lodging_left_text_wrapper {
     background: rgba(255, 255, 255, 0.7);
     border-radius: 15px;
@@ -97,8 +98,12 @@ div.lodging_left_text_wrapper {
     position: relative;
     box-sizing: border-box;
 }
+p.trail_left_box_para {
+    margin: 0 0 5px 0;
+    font-size: 14px;
+}
 h2.trail_left_box_header {
-    font-size: 25px;
+    font-size: 20px;
     margin: 0;
 }
 h2.trail_second_right_box_header {
@@ -112,7 +117,7 @@ div.trail_left_text_wrapper {
     top: 30vh;
     padding: 20px;
     /*float: left;*/
-    max-width: 30%;
+    max-width: 50%;
     /*margin-left: 5%;*/
     left: 50%;
     transform: translateX(-50%);
@@ -131,11 +136,11 @@ div.trail_left_text_wrapper {
 
 p.skiing_right_box_para {
     margin: 0;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 h2.skiing_right_box_header {
-    font-size: 25px;
+    font-size: 20px;
     margin: 0;
 }
 
@@ -144,7 +149,7 @@ div.skiing_right_text_wrapper {
     background: rgba(255, 255, 255, 0.7);
     padding: 20px;
     max-width: 30%;
-    top: 50vh;
+    top: 80vh;
     float: right;
     margin-right: 10%;
     position: relative;
@@ -173,17 +178,19 @@ div.bg_image_3 {
 }
 
 div.bg_image_1 {
-    background-position-y: -280px;
+    background-position-y: -220px;
+    background-position-x: 65%;
     background-image: url("../img/hiking.jpg");
 }
 
 div.bg_image_2 {
-    background-position-y: -150px;
+    background-position-y: 30px;
     background-image: url("../img/freeride.jpg");
 }
 
 div.bg_image_3 {
     background-position-y: -150px;
+    background-position-x: 30%;
     background-image: url("../img/cabin.jpg");
 }
 
