@@ -1,12 +1,12 @@
-window.onload = function(){
+$(document).ready(function () {
     var width = $(window).width();
     if (width < 500) {
         $('head').append($('<link rel="stylesheet" type="text/css" />')
             .attr('href', 'styles/hiking_smartphone.css'));
-    }else if (width < 800) {
+    } else if (width < 800) {
         $('head').append($('<link rel="stylesheet" type="text/css" />')
             .attr('href', 'styles/hiking_tablet.css'));
-    }else{
+    } else {
         $('head').append($('<link rel="stylesheet" type="text/css" />')
             .attr('href', 'styles/hiking.css'));
     }
@@ -23,10 +23,6 @@ window.onload = function(){
             $('.bg_image_3').css('top', '+' + (scrolledY * 0.1) - 250 + 'px');
         }
     }
-}
-$(document).ready(function () {
-
-
     // $("div").click(function () {
     //     $('html, body').animate({
     //         scrollTop: $("#lodging").offset().top
