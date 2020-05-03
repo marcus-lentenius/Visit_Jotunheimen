@@ -14,9 +14,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" href="styles/index.css"/>
-    <link rel="stylesheet" href="styles/general.css"/>
+    <script src="js/contact.js"></script>
 
+    <link rel="stylesheet" href="styles/general.css"/>
+    <link rel="stylesheet" href="styles/contact.css"/>
 </head>
 <body>
 <nav>
@@ -36,65 +37,30 @@
         <a class="menu_links" href="contact.html"> Contact </a>
     </div>
 </nav>
-<header class="banner">
+<header>
+    <h1 id="contact_title">Har du några funderingar?</h1>
 </header>
-
-<section id="title_info_section">
-    <h1 class="title_header">
-        Hela naturen på en plats
-    </h1>
-    <p class="title_paragraph">
-        Jotunheimen är ett enormt område orörd natur med vackra sjöar och ståtliga bergstoppar. Här finns två högt
-        rankade vandringsresmål: Nasjonalparkriket och Valdres. Båda resmålen har starka friluftstraditioner och ligger
-        bra till om du ska göra den klassiska vandringen till Besseggen.
-    </p>
+<section id="contact_form_section">
+    <form>
+        <fieldset id="contact_form">
+            <p class="form_paragraph">
+                Vänligen fyll i formuläret nedan:
+            </p>
+            <input class="contact_form_field" type="text" placeholder="Ditt namn">
+            <input class="contact_form_field" type="text" placeholder="Epostadress">
+            <select class="contact_form_selector">
+                <option>Ämne</option>
+                <option>Mer info</option>
+                <option>Boka guidad tur</option>
+                <option>Övrigt</option>
+            </select>
+            <textarea class="contact_form_text_area" placeholder="Meddelande"></textarea>
+            <input id="newsletter" name="newsletter" type="checkbox"/> <label for="newsletter" id="newsletter_label">
+            <p class="label_paragraph">Nyhetsbrev</p></label>
+            <input id="contact_submit" class="contact_form_submit" type="button" value="Skicka"/>
+        </fieldset>
+    </form>
 </section>
-
-<section>
-    <div class="categories_wrapper">
-        <div class="category_hiking_wrapper" onclick="location.href='hiking.html#hiking'">
-            <div class="category_text_wrapper">
-                <h2 class="category_header">
-                    Hiking
-                </h2>
-                <p class="category_paragraph">
-                    Kom närme naturen längs Besseggen
-                </p>
-            </div>
-        </div>
-        <div class="category_lodging_wrapper" onclick="location.href='hiking.html#skiing'">
-            <div class="category_text_wrapper">
-                <h2 class="category_header">
-                    Lodging
-                </h2>
-                <p class="category_paragraph">
-                    Ha en skön semester
-                </p>
-            </div>
-        </div>
-        <div class="category_forest_wrapper" onclick="location.href='hiking.html#lodging'">
-            <div class="category_text_wrapper">
-                <h2 class="category_header">
-                    Wood
-                </h2>
-                <p class="category_paragraph">
-                    Ta en tur i skogen
-                </p>
-            </div>
-        </div>
-        <div class="category_skiing_wrapper" onclick="location.href='hiking.html#forest_trail'">
-            <div class="category_text_wrapper">
-                <h2 class="category_header">
-                    Freeriding
-                </h2>
-                <p class="category_paragraph">
-                    Åk skidor utan begränsning
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
-
 <footer class="footer">
     <div class="footer_links_wrapper">
         <div class="footer_links_centering">
@@ -117,6 +83,5 @@
         </a>
     </div>
 </footer>
-
 </body>
 </html>
