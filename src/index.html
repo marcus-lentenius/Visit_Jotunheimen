@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Visit Jotunheimen</title>
-    <!-- Latest compiled and minified CSS -->
-    <!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">-->
+    <meta name="keywords" content="Jotunheimen, Norway, Hiking, Nature">
+    <meta name="description" content="Info about Jotunheimen">
+    <meta name="author" content="Marcus Lentenius">
 
-    <!-- jQuery library -->
+    <link rel="shortcut icon" href="img/favicon.png"/>
+
+    <title>Hälsa på i Jotunheimen</title>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-    <!-- Popper JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-
-    <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <script src="js/general.js"></script>
 
     <link rel="stylesheet" href="styles/index.css"/>
     <link rel="stylesheet" href="styles/general.css"/>
@@ -22,36 +23,9 @@
 </head>
 <body>
 <nav>
-    <div class="menu">
-        <div class="drop_menu_wrapper"
-             data-toggle="collapse"
-             data-target="#demo">
-            <div class="drop_menu_icon"></div>
-            <div class="drop_menu_icon"></div>
-            <div class="drop_menu_icon"></div>
-        </div>
-        <p class="menu_text">
-            Visit Jotunheimen
-        </p>
-    </div>
-    <div id="demo" class="menu_drop_down collapse">
-        <a class="menu_links" href=""> Språk </a>
-        <a class="menu_links" href=""> Kontakt </a>
-        <a class="menu_links" href=""> Om </a>
-    </div>
 </nav>
+
 <header class="banner">
-    <div class="welcome_wrapper">
-        <h2 class="welcome_header">
-            Välkommen till Jotunheimen
-        </h2>
-        <p class="welcome_para">
-            Här är det kul
-            och fint
-            osv
-            osv
-        </p>
-    </div>
 </header>
 
 <section id="title_info_section">
@@ -67,37 +41,37 @@
 
 <section>
     <div class="categories_wrapper">
-        <div class="category_hiking_wrapper">
+        <div class="category_hiking_wrapper" onclick="location.href='hiking.html#hiking'">
             <div class="category_text_wrapper">
                 <h2 class="category_header">
-                    Hiking
+                    Hajka
                 </h2>
                 <p class="category_paragraph">
-                    Kom närme naturen längs Besseggen
+                    Kom närmare naturen längs Besseggen
                 </p>
             </div>
         </div>
-        <div class="category_lodging_wrapper">
+        <div class="category_lodging_wrapper" onclick="location.href='hiking.html#lodging'">
             <div class="category_text_wrapper">
                 <h2 class="category_header">
-                    Lodging
+                    Bo i stuga
                 </h2>
                 <p class="category_paragraph">
                     Ha en skön semester
                 </p>
             </div>
         </div>
-        <div class="category_forest_wrapper">
+        <div class="category_forest_wrapper" onclick="location.href='hiking.html#trailing'">
             <div class="category_text_wrapper">
                 <h2 class="category_header">
-                    Wood
+                    Skogsvandring
                 </h2>
                 <p class="category_paragraph">
                     Ta en tur i skogen
                 </p>
             </div>
         </div>
-        <div class="category_skiing_wrapper">
+        <div class="category_skiing_wrapper" onclick="location.href='hiking.html#skiing'">
             <div class="category_text_wrapper">
                 <h2 class="category_header">
                     Freeriding
@@ -110,63 +84,7 @@
     </div>
 </section>
 
-<section id="short_info_section">
-
-    <div>
-        Aktiviteter
-    </div>
-
-</section>
-
-<section id="todo_section">
-    <div class="todo_links_wrapper">
-
-        <div class="todo_links_target_wrapper">
-            <h2 class="todo_link_header">
-                titta här
-            </h2>
-        </div>
-        <div class="todo_links_target_wrapper">
-            <h2 class="todo_link_header">
-                titta här för att kampa osv
-            </h2>
-        </div>
-        <div class="todo_links_target_wrapper">
-            <h2 class="todo_link_header">
-                titta här
-            </h2>
-        </div>
-        <div class="todo_links_target_wrapper">
-            <h2 class="todo_link_header">
-                titta här för att kampa osv
-            </h2>
-        </div>
-        <div class="todo_links_target_wrapper">
-            <h2 class="todo_link_header">
-                titta här
-            </h2>
-        </div>
-        <div class="todo_links_target_wrapper">
-            <h2 class="todo_link_header">
-                titta här för att kampa osv
-            </h2>
-        </div>
-        <div class="todo_links_target_wrapper">
-            <h2 class="todo_link_header">
-                titta här
-            </h2>
-        </div>
-        <div class="todo_links_target_wrapper">
-            <h2 class="todo_link_header">
-                titta här för att kampa osv
-            </h2>
-        </div>
-    </div>
-</section>
-
-<footer>
-    <div class="footer">
-    </div>
+<footer class="footer">
 </footer>
 
 </body>

@@ -11,13 +11,13 @@
 }
 
 div.menu {
-    z-index: 999;
+    text-align: right;
+    z-index: 1;
     background-color: #ced7de;
     border-bottom: #c2cad1 3px solid;
     width: 100%;
     height: 40px;
     position: fixed;
-    vertical-align: middle;
     top: 0;
 }
 
@@ -25,7 +25,8 @@ div.menu_drop_down {
     width: 100%;
     top: 40px;
     position: fixed;
-    z-index: 998;
+    text-align: right;
+    z-index: 1;
     background-color: #c2cad1;
     border-bottom: #7f9da1 solid 3px;
 }
@@ -33,8 +34,7 @@ div.menu_drop_down {
 div.drop_menu_icon {
     width: 20px;
     height: 2px;
-    margin-bottom: 3px;
-    margin-top: 3px;
+    margin-bottom: 4px;
     background-color: white;
 }
 
@@ -42,14 +42,15 @@ div.drop_menu_icon {
 a.menu_links {
     color: #707070;
     text-decoration: none;
-    margin: 2px 17px 2px 0;
+    margin-right: 10px;
     font-size: 15px;
-    float: right;
+    position: relative;
+    bottom: 3px;
 }
 
 div.drop_menu_wrapper {
     padding-left: 10px;
-    padding-top: 11px;
+    padding-top: 14px;
     float: left;
 }
 
@@ -57,27 +58,52 @@ div.drop_menu_wrapper:hover {
     cursor: pointer;
 }
 
-p.menu_text {
-    float: right;
+div.social_media_wrapper {
+    flex-basis: 50%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-left: solid #bcbcbc 1px;
+}
+
+div.footer_links_wrapper {
+    flex-basis: 50%;
+    max-width: 300px;
+}
+
+a.footer_links {
     color: #707070;
-    font-size: 20px;
-    margin: 10px;
+    font-size: 15px;
+    text-decoration: none;
 }
 
-
-p.menu_links {
-    color: white;
-    font-size: 20px;
-    margin: auto 15px;
+div.footer_links_centering {
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-
-div.footer {
+footer.footer {
+    display: flex;
+    justify-content: center;
+    padding: 25px 0;
     background-color: #d3d3d3;
-    height: 15vh;
-    text-align: center;
-    vertical-align: bottom;
     border-top: #bcbcbc 3px solid;
+}
+
+a.home {
+    font-size: 20px;
+    top: 4px;
+    position: relative;
+    margin: 10px;
+    color: #707070;
+    text-decoration: none;
+}
+
+a.social_media_link {
+    text-decoration: none;
 }
 
 body {
@@ -88,4 +114,8 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: 500;
+}
+
+img.social_media_icon {
+    height: 20px;
 }

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="keywords" content="Jotunheimen, Norway, Hiking, Nature">
+    <meta name="description" content="Info about Jotunheimen">
+    <meta name="author" content="Marcus Lentenius">
+
+    <link rel="shortcut icon" href="img/favicon.png"/>
+    <title>Hälsa på i Jotunheimen</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <script src="js/contact.js"></script>
+    <script src="js/general.js"></script>
+
+    <link rel="stylesheet" href="styles/general.css"/>
+    <link rel="stylesheet" href="styles/contact.css"/>
+</head>
+<body>
+
+<nav>
+</nav>
+
+<header>
+    <h1 id="contact_title">Har du några funderingar?</h1>
+</header>
+
+<section id="contact_form_section">
+    <form>
+        <fieldset id="contact_form">
+            <p class="form_paragraph">
+                Vänligen fyll i formuläret nedan:
+            </p>
+            <input class="contact_form_field" type="text" placeholder="Ditt namn">
+            <input class="contact_form_field" type="text" placeholder="Epostadress">
+            <select class="contact_form_selector">
+                <option>Ämne</option>
+                <option>Mer info</option>
+                <option>Boka guidad tur</option>
+                <option>Övrigt</option>
+            </select>
+            <textarea class="contact_form_text_area" placeholder="Meddelande"></textarea>
+            <input id="newsletter" name="newsletter" type="checkbox"/> <label for="newsletter" id="newsletter_label">
+            <p class="label_paragraph">Nyhetsbrev</p></label>
+            <input id="contact_submit" class="contact_form_submit" type="button" value="Skicka"/>
+        </fieldset>
+    </form>
+</section>
+
+<footer class="footer">
+</footer>
+</body>
+</html>

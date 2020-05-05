@@ -3,144 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Visit Jotunheimen</title>
-    <!-- Latest compiled and minified CSS -->
-    <!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">-->
+    <meta name="keywords" content="Jotunheimen, Norway, Hiking, Nature">
+    <meta name="description" content="Info about Jotunheimen">
+    <meta name="author" content="Marcus Lentenius">
 
-    <!-- jQuery library -->
+    <link rel="shortcut icon" href="img/favicon.png"/>
+    <title>Hälsa på i Jotunheimen</title>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-    <!-- Popper JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-
-    <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
     <link rel="stylesheet" href="styles/general.css"/>
-    <link rel="stylesheet" href="styles/hiking.css"/>
 
+    <script src="js/general.js"></script>
+    <script src="js/parallax.js"></script>
 </head>
 <body>
-<nav>
-    <div class="menu">
-        <div class="drop_menu_wrapper"
-             data-toggle="collapse"
-             data-target="#demo">
-            <div class="drop_menu_icon"></div>
-            <div class="drop_menu_icon"></div>
-            <div class="drop_menu_icon"></div>
-        </div>
-        <p class="menu_text">
-            Visit Jotunheimen
+
+<nav></nav>
+
+<section id="parallax_wrapper">
+    <div class="start_bg_image_wrapper">
+        <div class="bg_image_1"></div>
+    </div>
+    <div id="skiing_anchor" class="bg_image_wrapper">
+        <div class="bg_image_2"></div>
+    </div>
+    <div id="lodging_anchor" class="bg_image_wrapper">
+        <div class="bg_image_3"></div>
+    </div>
+</section>
+
+<div class="content_wrapper">
+    <div class="hiking_left_text_wrapper">
+        <h2 class="hiking_left_box_header left_box_header">
+            Jättarnas hem
+        </h2>
+        <p class="hiking_left_box_para">
+            Jotunheimen är ett 3 500 kvadratkilometer
+            högfjällsområde i Norge.
+            Här finns skandinaviens
+            högsta berg.
+        </p>
+        <p class="hiking_left_box_para">
+            Vandra mellan stugor eller tälta på vägen.
+            Jotunheimen erbjuder en fantastisk tur i bergen.
+        </p>
+        <h2 class="hiking_second_right_box_header">
+            Besseggen
+        </h2>
+        <p class="hiking_left_box_para">
+            Från Besseggen har man en vacker
+            utsikt över Gjende och Bessvatnet.
+            Det speciella med utsikten är att
+            Gjende ligger 400 meter lägre än
+            Bessvatnet och medan Bessvatnet är
+            blått som de flesta andra insjöar
+            så har Gjende en markant grön färg
+            som kommer av att glaciärvatten sköljer
+            ner lera i sjön.
         </p>
     </div>
-    <div id="demo" class="menu_drop_down collapse">
-        <a class="menu_links" href=""> Språk </a>
-        <a class="menu_links" href=""> Kontakt </a>
-        <a class="menu_links" href=""> Om </a>
+</div>
+<div class="content_wrapper">
+    <div class="skiing_left_text_wrapper">
+        <h2 class="skiing_left_box_header">
+            Guidade turer
+        </h2>
+        <p class="skiing_left_box_para">
+            Vintern som vår är en fantastisk
+            tid för skidåkning. Tillsammans med våra guider
+            kommer du få många minnesvärda
+            upplevelser.
+        </p>
     </div>
-</nav>
-
-<div class="bg_wrapper">
-    <div class="bg_image_1 background"></div>
-    <div class="content_wrapper">
-        <div class="left_text_wrapper">
-            <h2 class="left_box_header">
-                Left box
-            </h2>
-            <p class="left_box_para">
-                En text
-                <br>
-                gånger två
-            </p>
-        </div>
-        <div class="right_text_wrapper">
-            <h2 class="right_box_header">
-                Left box
-            </h2>
-            <p class="right_box_para">
-                En text
-                <br>
-                gånger två
-            </p>
-        </div>
+    <div class="skiing_right_text_wrapper">
+        <h2 class="skiing_right_box_header">
+            Åk skidor i Jotunheimen
+        </h2>
+        <p class="skiing_right_box_para">
+            Vandra upp för Jotunheimens berg i fantastiska vinterlandskap
+            och ta skidorna ner.
+        </p>
     </div>
 </div>
-<div class="bg_wrapper">
-    <div class="bg_image_2 background"></div>
-    <div class="content_wrapper">
-        <div class="left_text_wrapper">
-            <h2 class="left_box_header">
-                Left box
-            </h2>
-            <p class="left_box_para">
-                En text
-                <br>
-                gånger två
-            </p>
-        </div>
-        <div class="right_text_wrapper">
-            <h2 class="right_box_header">
-                Left box
-            </h2>
-            <p class="right_box_para">
-                En text
-                <br>
-                gånger två
-            </p>
-        </div>
+<div class="content_wrapper">
+    <div class="lodging_left_text_wrapper">
+        <h2 class="lodging_left_box_header">
+            Bo i stuga i naturen
+        </h2>
+        <p class="lodging_left_box_para">
+            Kom och spendera en helg i naturen. Bo i en stuga i naturen,
+            antingen för att bara koppla av eller som övernattning
+            under en vandring genom berg och dalar.
+        </p>
+    </div>
+    <div class="lodging_right_text_wrapper">
+        <h2 class="lodging_right_box_header">
+            lodge
+        </h2>
+        <p class="lodging_right_box_para">
+        </p>
     </div>
 </div>
-<div class="bg_wrapper">
-    <div class="bg_image_3 background"></div>
-    <div class="content_wrapper">
-        <div class="left_text_wrapper">
-            <h2 class="left_box_header">
-                Left box
-            </h2>
-            <p class="left_box_para">
-                En text
-                <br>
-                gånger två
-            </p>
-        </div>
-        <div class="right_text_wrapper">
-            <h2 class="right_box_header">
-                Left box
-            </h2>
-            <p class="right_box_para">
-                En text
-                <br>
-                gånger två
-            </p>
-        </div>
-    </div>
-</div>
-<div class="bg_wrapper">
-    <div class="bg_image_4 background"></div>
-    <div class="content_wrapper">
-        <div class="left_text_wrapper">
-            <h2 class="left_box_header">
-                Left box
-            </h2>
-            <p class="left_box_para">
-                En text
-                <br>
-                gånger två
-            </p>
-        </div>
-        <div class="right_text_wrapper">
-            <h2 class="right_box_header">
-                Left box
-            </h2>
-            <p class="right_box_para">
-                En text
-                <br>
-                gånger två
-            </p>
-        </div>
+<div id="trailing_anchor" class="content_wrapper bg_image_4">
+    <div class="trail_left_text_wrapper">
+        <h2 class="trail_left_box_header">
+            Njut av en tur i nordens urskogar
+        </h2>
+        <p class="trail_left_box_para">
+            Få platser är lika vackra som nordens urskogar.
+            Finn ro och lugn bland grönskan i skogen och till sången av
+            hundratals fågelarter.
+        </p>
     </div>
 </div>
 
+<footer class="footer"></footer>
 </body>
 </html>
