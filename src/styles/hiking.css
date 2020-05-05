@@ -109,11 +109,9 @@ h2.trail_second_right_box_header {
 div.trail_left_text_wrapper {
     background: rgba(255, 255, 255, 0.7);
     border-radius: 15px;
-    top: 30vh;
+    top: 20vh;
     padding: 20px;
-    /*float: left;*/
-    max-width: 30%;
-    /*margin-left: 5%;*/
+    max-width: 40%;
     left: 50%;
     transform: translateX(-50%);
     position: relative;
@@ -217,7 +215,7 @@ div.end_bg_image_wrapper {
 /*OTHER*/
 
 div.content_wrapper {
-    height: 100vh;
+    height: calc(100vh + 40px);
 }
 
 body {

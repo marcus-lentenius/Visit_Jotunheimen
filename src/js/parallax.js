@@ -12,22 +12,36 @@ $(document).ready(function () {
     }
 
     if (width > 500) {
-        $(window).bind('scroll', function (e) {
-            parallaxScroll();
-        });
-
-        function parallaxScroll() {
+        $(window).bind('scroll', function () {
             var scrolledY = $(window).scrollTop();
             $('.bg_image_1').css('top', '+' + (scrolledY * 0.9) + 'px');
             $('.bg_image_2').css('top', '+' + (scrolledY * 0.1) - 130 + 'px');
             $('.bg_image_3').css('top', '+' + (scrolledY * 0.1) - 250 + 'px');
-        }
+
+        });
     }
-    // $("div").click(function () {
-    //     $('html, body').animate({
-    //         scrollTop: $("#lodging").offset().top
-    //     }, 1000);
-    // })
+
+    function scrollTo(scrollTarget) {
+        var page = $('html, body');
+
+        page.on("scroll mousedown wheel DOMMouseScroll mousewheel keyup touchmove", function () {
+            page.stop();
+        });
+
+        page.animate({
+            scrollTop: $(scrollTarget).offset().top
+        }, 1000);
+    }
+
+    $(window).on("load", function () {
+        if (window.location.hash === "#skiing") {
+            scrollTo("#skiing_anchor");
+        } else if (window.location.hash === "#lodging") {
+            scrollTo("#lodging_anchor");
+        } else if (window.location.hash === "#trailing") {
+            scrollTo("#trailing_anchor");
+        }
+    });
 });
 
 
