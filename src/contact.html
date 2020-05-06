@@ -22,10 +22,9 @@
 </head>
 <body>
 
-<nav>
-</nav>
-
 <header>
+    <nav></nav>
+
     <h1 id="contact_title">Har du några funderingar?</h1>
 </header>
 
@@ -35,17 +34,28 @@
             <p class="form_paragraph">
                 Vänligen fyll i formuläret nedan:
             </p>
+
             <input class="contact_form_field" type="text" placeholder="Ditt namn">
+
             <input class="contact_form_field" type="text" placeholder="Epostadress">
+
             <select class="contact_form_selector">
                 <option>Ämne</option>
                 <option>Mer info</option>
                 <option>Boka guidad tur</option>
                 <option>Övrigt</option>
             </select>
+
             <textarea class="contact_form_text_area" placeholder="Meddelande"></textarea>
-            <input id="newsletter" name="newsletter" type="checkbox"/> <label for="newsletter" id="newsletter_label">
-            <p class="label_paragraph">Nyhetsbrev</p></label>
+
+            <input id="newsletter" name="newsletter" type="checkbox"/>
+
+            <p class="label_paragraph">
+                <label for="newsletter" id="newsletter_label">
+                    Nyhetsbrev
+                </label>
+            </p>
+
             <input id="contact_submit" class="contact_form_submit" type="button" value="Skicka"/>
         </fieldset>
     </form>

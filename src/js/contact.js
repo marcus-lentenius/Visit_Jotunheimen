@@ -5,7 +5,8 @@ $(document).ready(function () {
             "<div class='form_submitted'> " +
             "<h2 class='thank_note'>Tack!</h2> " +
             "</div>");
-    })
+    });
+
     var newsletter = false;
 
     $("#newsletter").click(function () {

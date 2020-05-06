@@ -1,4 +1,4 @@
-header.banner {
+div.banner {
     background-image: url("../img/mountain_panorama.jpg");
     background-size: cover;
     background-position: center;
@@ -7,37 +7,6 @@ header.banner {
     padding-bottom: 10%;
     margin-top: 100px;
     position: relative;
-}
-
-@media only screen and (max-width: 750px) {
-    div.welcome_wrapper {
-        width: 100%;
-        box-sizing: border-box;
-        padding: 15%;
-    }
-}
-
-@media only screen and (min-width: 751px) {
-    div.welcome_wrapper {
-        left: 8%;
-    }
-}
-
-div.welcome_wrapper {
-    position: absolute;
-    bottom: 10%;
-    padding: 2%;
-    font-size: 70%;
-    background: rgba(255, 255, 255, 0.7);
-}
-
-h2.welcome_header {
-    font-size: 25px;
-    margin: 0;
-}
-
-p.welcome_para {
-    margin: 0;
 }
 
 #title_info_section {
@@ -53,15 +22,6 @@ h1.title_header {
 p.title_paragraph {
     font-size: smaller;
 }
-
-div.categories_wrapper {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto 50px;
-    justify-content: center;
-}
-
 
 div.category_hiking_wrapper,
 div.category_lodging_wrapper,
