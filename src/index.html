@@ -11,6 +11,7 @@
 
     <title>Hälsa på i Jotunheimen</title>
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
@@ -22,16 +23,19 @@
 
 </head>
 <body>
-<nav>
-</nav>
 
-<header class="banner">
+
+<header>
+    <nav></nav>
+
+    <div class="banner"></div>
 </header>
 
 <section id="title_info_section">
     <h1 class="title_header">
         Hela naturen på en plats
     </h1>
+
     <p class="title_paragraph">
         Jotunheimen är ett enormt område orörd natur med vackra sjöar och ståtliga bergstoppar. Här finns två högt
         rankade vandringsresmål: Nasjonalparkriket och Valdres. Båda resmålen har starka friluftstraditioner och ligger
@@ -39,46 +43,61 @@
     </p>
 </section>
 
+
 <section>
-    <div class="categories_wrapper">
-        <div class="category_hiking_wrapper" onclick="location.href='hiking.html#hiking'">
-            <div class="category_text_wrapper">
-                <h2 class="category_header">
-                    Hajka
-                </h2>
-                <p class="category_paragraph">
-                    Kom närmare naturen längs Besseggen
-                </p>
+    <div class="container category_wrapper">
+        <div class="row">
+            <div class="col category_column">
+                <div class="category_hiking_wrapper" onclick="location.href='hiking.html#hiking'">
+                    <div class="category_text_wrapper">
+                        <h2 class="category_header">
+                            Hajka
+                        </h2>
+
+                        <p class="category_paragraph">
+                            Kom närmare naturen längs Besseggen
+                        </p>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="category_lodging_wrapper" onclick="location.href='hiking.html#lodging'">
-            <div class="category_text_wrapper">
-                <h2 class="category_header">
-                    Bo i stuga
-                </h2>
-                <p class="category_paragraph">
-                    Ha en skön semester
-                </p>
+            <div class="col category_column">
+                <div class="category_skiing_wrapper" onclick="location.href='hiking.html#skiing'">
+                    <div class="category_text_wrapper">
+                        <h2 class="category_header">
+                            Freeriding
+                        </h2>
+
+                        <p class="category_paragraph">
+                            Åk skidor utan begränsning
+                        </p>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="category_forest_wrapper" onclick="location.href='hiking.html#trailing'">
-            <div class="category_text_wrapper">
-                <h2 class="category_header">
-                    Skogsvandring
-                </h2>
-                <p class="category_paragraph">
-                    Ta en tur i skogen
-                </p>
+            <div class="col category_column">
+                <div class="category_lodging_wrapper" onclick="location.href='hiking.html#lodging'">
+                    <div class="category_text_wrapper">
+                        <h2 class="category_header">
+                            Bo i stuga
+                        </h2>
+
+                        <p class="category_paragraph">
+                            Ha en skön semester
+                        </p>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="category_skiing_wrapper" onclick="location.href='hiking.html#skiing'">
-            <div class="category_text_wrapper">
-                <h2 class="category_header">
-                    Freeriding
-                </h2>
-                <p class="category_paragraph">
-                    Åk skidor utan begränsning
-                </p>
+            <div class="col category_column">
+                <div class="category_forest_wrapper" onclick="location.href='hiking.html#trailing'">
+                    <div class="category_text_wrapper">
+                        <h2 class="category_header">
+                            Skogsvandring
+                        </h2>
+
+                        <p class="category_paragraph">
+                            Ta en tur i skogen
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

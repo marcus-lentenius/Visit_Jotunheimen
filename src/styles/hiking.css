@@ -1,223 +1,510 @@
-/*LEFT TEXT BOX */
-
-/*h2.left_box_header {*/
-/*    font-size: 70%;*/
-/*    margin: 0;*/
-/*}*/
-
-/*p.left_box_para {*/
-/*    font-size: 50%;*/
-/*    margin: 0;*/
-/*}*/
-
-/*div.left_text_wrapper {*/
-/*    background: rgba(255, 255, 255, 0.5);*/
-/*    top: 50vh;*/
-/*    padding: 20px;*/
-/*    float: left;*/
-/*    margin-left: 10%;*/
-/*    position: relative;*/
-/*    box-sizing: border-box;*/
-/*}*/
-
-/*hiking*/
-p.hiking_left_box_para {
-    margin: 0 0 5px 0;
-    font-size: 18px;
-}
-
-h2.hiking_left_box_header {
-    font-size: 25px;
-    margin: 0;
-}
-h2.hiking_second_right_box_header {
-    font-size: 22px;
-    margin: 0;
-}
-
-div.hiking_left_text_wrapper {
-    background: rgba(255, 255, 255, 0.7);
-    border-radius: 15px;
-    top: 50vh;
-    padding: 20px;
-    float: left;
-    max-width: 30%;
-    margin-left: 10%;
-    position: relative;
-    box-sizing: border-box;
-}
-p.skiing_left_box_para {
-    margin: 0 0 5px 0;
-    font-size: 18px;
-}
-
-h2.skiing_left_box_header {
-    font-size: 25px;
-    margin: 0;
-}
-h2.skiing_second_right_box_header {
-    font-size: 22px;
-    margin: 0;
-}
-
-div.skiing_left_text_wrapper {
-    background: rgba(255, 255, 255, 0.7);
-    border-radius: 15px;
-    top: 90vh;
-    padding: 20px;
-    float: left;
-    max-width: 30%;
-    margin-left: 10%;
-    position: relative;
-    box-sizing: border-box;
-}
-
-h2.lodging_left_box_header {
-    font-size: 25px;
-    margin: 0;
-}
-h2.lodging_second_right_box_header {
-    font-size: 22px;
-    margin: 0;
-}
-
-p.lodging_left_box_para {
-    margin: 0 0 5px 0;
-    font-size: 18px;
-}
-
-div.lodging_left_text_wrapper {
-    background: rgba(255, 255, 255, 0.7);
-    border-radius: 15px;
-    top: 70vh;
-    padding: 20px;
-    float: left;
-    max-width: 30%;
-    margin-left: 5%;
-    position: relative;
-    box-sizing: border-box;
-}
-h2.trail_left_box_header {
-    font-size: 25px;
-    margin: 0;
-}
-h2.trail_second_right_box_header {
-    font-size: 22px;
-    margin: 0;
-}
-
-div.trail_left_text_wrapper {
-    background: rgba(255, 255, 255, 0.7);
-    border-radius: 15px;
-    top: 20vh;
-    padding: 20px;
-    max-width: 40%;
-    left: 50%;
-    transform: translateX(-50%);
-    position: relative;
-    box-sizing: border-box;
-}
-
-
-/*END TEXT LEFT BOX*/
-
-/*---------------------*/
-
-/*RIGHT TEXT BOX*/
-
-/*hiking*/
-
-p.skiing_right_box_para {
-    margin: 0;
-    font-size: 18px;
-}
-
-h2.skiing_right_box_header {
-    font-size: 25px;
-    margin: 0;
-}
-
-div.skiing_right_text_wrapper {
-    border-radius: 15px;
-    background: rgba(255, 255, 255, 0.7);
-    padding: 20px;
-    max-width: 30%;
-    top: 50vh;
-    float: right;
-    margin-right: 10%;
-    position: relative;
-    box-sizing: border-box;
-}
-
-
-/*END RIGHT TEXT BOX*/
-
-/*---------------------*/
-
-/*PARALLAX*/
-#parallax_wrapper {
-    position: absolute;
-}
-
-div.bg_image_1,
-div.bg_image_2,
-div.bg_image_3 {
-    height: 140vh;
-    min-width: 100vw;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-div.bg_image_1 {
-    background-position-y: -280px;
-    background-image: url("../img/hiking.jpg");
-}
-
-div.bg_image_2 {
-    background-position-y: -150px;
-    background-image: url("../img/freeride.jpg");
-}
-
-div.bg_image_3 {
-    background-position-y: -150px;
-    background-image: url("../img/cabin.jpg");
-}
-
-div.bg_image_4 {
-    background-image: url("../img/trail.jpg");
-    background-position: center;
-    background-size: cover;
-}
-
-div.start_bg_image_wrapper {
-    overflow: hidden;
-    max-height: 120vh;
-    height: 120vh;
-}
-
-div.bg_image_wrapper {
-    overflow: hidden;
-    max-height: 100vh;
-    height: 100vh
-}
-
-div.end_bg_image_wrapper {
-    position: relative;
-    overflow: hidden;
-}
-
-/*END BACKGROUND*/
-
-/*---------------------*/
-
-/*OTHER*/
-
-div.content_wrapper {
-    height: calc(100vh + 40px);
-}
-
 body {
     overflow-x: hidden;
+}
+
+@media only screen and (min-width: 801px) {
+    /*WRAPPERS*/
+    div.content_wrapper {
+        position: relative;
+        height: calc(100vh + 40px);
+    }
+
+    div.content_wrapper_first {
+        height: calc(120vh + 40px);
+    }
+
+
+    div.hiking_text_wrapper {
+        top: 50vh;
+        float: left;
+        margin-left: 10%;
+    }
+
+    div.skiing_left_text_wrapper {
+        top: 70vh;
+        float: left;
+        margin-left: 10%;
+    }
+
+    div.skiing_right_text_wrapper {
+        top: 50vh;
+        float: right;
+        margin-right: 10%;
+    }
+
+    div.lodging_text_wrapper {
+        top: 70vh;
+        float: left;
+        margin-left: 5%;
+    }
+
+    div.trailing_text_wrapper {
+        top: 30vh;
+        max-width: 40%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    div.lodging_text_wrapper,
+    div.hiking_text_wrapper,
+    div.skiing_left_text_wrapper,
+    div.skiing_right_text_wrapper,
+    div.trailing_text_wrapper {
+        border-radius: 15px;
+        background: rgba(255, 255, 255, 0.7);
+        padding: 20px;
+        max-width: 30%;
+        position: relative;
+        box-sizing: border-box;
+    }
+
+
+    /*TEXT*/
+    h2.hiking_second_box_header {
+        font-size: 22px;
+        margin: 0;
+    }
+
+    h2.skiing_left_box_header,
+    h2.skiing_right_box_header,
+    h2.hiking_box_header,
+    h2.lodging_box_header,
+    h2.trailing_text_box_header {
+        font-size: 3vmin;
+        margin: 0;
+    }
+
+
+    p.lodging_box_para,
+    p.hiking_box_para,
+    p.trailing_text_box_para,
+    p.skiing_left_box_para,
+    p.skiing_right_box_para {
+        margin: 0 0 5px 0;
+        font-size: 2vmin;
+    }
+
+
+    /*IMAGES*/
+    div.hiking_bg_image,
+    div.skiing_bg_image,
+    div.lodge_bg_image,
+    div.trailing_bg_image {
+        height: 140vh;
+        min-width: 100vw;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+    }
+
+    div.hiking_bg_image {
+        background-position-y: -280px;
+        background-image: url("../img/hiking.jpg");
+    }
+
+    div.skiing_bg_image {
+        background-position-y: -150px;
+        background-image: url("../img/freeride.jpg");
+    }
+
+    div.lodge_bg_image {
+        background-position-y: -150px;
+        background-image: url("../img/cabin.jpg");
+    }
+
+    div.trailing_bg_image {
+        background-position: bottom;
+        height: 100vh;
+        bottom: 0;
+        background-image: url("../img/trail.jpg");
+    }
+}
+
+/*TABLET*/
+
+@media only screen and (max-width: 800px) {
+    /*WRAPPERS*/
+    div.content_wrapper {
+        position: relative;
+        height: calc(100vh + 40px);
+    }
+
+    div.content_wrapper_first {
+        height: calc(120vh + 40px);
+    }
+
+
+    div.hiking_text_wrapper {
+        top: 50vh;
+        float: left;
+        margin-left: 10%;
+    }
+
+    div.skiing_left_text_wrapper {
+        top: 70vh;
+        float: left;
+        margin-left: 10%;
+    }
+
+    div.skiing_right_text_wrapper {
+        top: 50vh;
+        float: right;
+        margin-right: 10%;
+    }
+
+    div.lodging_text_wrapper {
+        top: 70vh;
+        float: right;
+        margin-right: 5%;
+    }
+
+    div.trailing_text_wrapper {
+        top: 30vh;
+        max-width: 40%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    div.lodging_text_wrapper,
+    div.hiking_text_wrapper,
+    div.skiing_left_text_wrapper,
+    div.skiing_right_text_wrapper,
+    div.trailing_text_wrapper {
+        border-radius: 15px;
+        background: rgba(255, 255, 255, 0.7);
+        padding: 20px;
+        max-width: 40%;
+        position: relative;
+        box-sizing: border-box;
+    }
+
+
+    /*TEXT*/
+    h2.hiking_second_box_header {
+        font-size: 22px;
+        margin: 0;
+    }
+
+    h2.skiing_left_box_header,
+    h2.skiing_right_box_header,
+    h2.hiking_box_header,
+    h2.lodging_box_header,
+    h2.trailing_text_box_header {
+        font-size: 3vmin;
+        margin: 0;
+    }
+
+
+    p.lodging_box_para,
+    p.hiking_box_para,
+    p.trailing_text_box_para,
+    p.skiing_left_box_para,
+    p.skiing_right_box_para {
+        margin: 0 0 5px 0;
+        font-size: 2vmin;
+    }
+
+
+    /*IMAGES*/
+    div.hiking_bg_image,
+    div.skiing_bg_image,
+    div.lodge_bg_image,
+    div.trailing_bg_image {
+        height: 140vh;
+        min-width: 100vw;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+    }
+
+    div.hiking_bg_image {
+        background-position-y: -280px;
+        background-position-x: -830px;
+        background-image: url("../img/hiking.jpg");
+    }
+
+    div.skiing_bg_image {
+        background-position-y: -150px;
+        background-image: url("../img/freeride.jpg");
+    }
+
+    div.lodge_bg_image {
+        background-position-y: -150px;
+        background-image: url("../img/cabin.jpg");
+    }
+
+    div.trailing_bg_image {
+        background-position: bottom;
+        height: 100vh;
+        bottom: 0;
+        background-image: url("../img/trail.jpg");
+    }
+}
+
+/*LARGE PHONE*/
+
+@media only screen and (max-width: 550px) {
+    /*WRAPPERS*/
+    div.content_wrapper {
+        position: relative;
+        height: calc(100vh + 40px);
+    }
+
+    div.content_wrapper_first {
+        height: calc(120vh + 40px);
+    }
+
+
+    div.hiking_text_wrapper {
+        top: 50vh;
+        float: left;
+        margin-left: 10%;
+    }
+
+    div.skiing_left_text_wrapper {
+        top: 70vh;
+        float: left;
+        margin-left: 10%;
+    }
+
+    div.skiing_right_text_wrapper {
+        top: 50vh;
+        float: right;
+        margin-right: 10%;
+    }
+
+    div.lodging_text_wrapper {
+        top: 70vh;
+        float: right;
+        margin-right: 5%;
+    }
+
+    div.trailing_text_wrapper {
+        top: 30vh;
+        max-width: 40%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    div.lodging_text_wrapper,
+    div.hiking_text_wrapper,
+    div.skiing_left_text_wrapper,
+    div.skiing_right_text_wrapper,
+    div.trailing_text_wrapper {
+        border-radius: 15px;
+        background: rgba(255, 255, 255, 0.7);
+        padding: 20px;
+        max-width: 40%;
+        position: relative;
+        box-sizing: border-box;
+    }
+
+
+    /*TEXT*/
+    h2.hiking_second_box_header {
+        font-size: 18px;
+        margin: 0;
+    }
+
+    h2.skiing_left_box_header,
+    h2.skiing_right_box_header,
+    h2.hiking_box_header,
+    h2.lodging_box_header,
+    h2.trailing_text_box_header {
+        font-size: 20px;
+        margin: 0;
+    }
+
+
+    p.lodging_box_para,
+    p.hiking_box_para,
+    p.trailing_text_box_para,
+    p.skiing_left_box_para,
+    p.skiing_right_box_para {
+        margin: 0 0 5px 0;
+        font-size: 12px;
+    }
+
+
+    /*IMAGES*/
+    div.hiking_bg_image,
+    div.skiing_bg_image,
+    div.lodge_bg_image,
+    div.trailing_bg_image {
+        height: 140vh;
+        min-width: 100vw;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+    }
+
+    div.hiking_bg_image {
+        background-position-y: -280px;
+        background-position-x: -1000px;
+        background-image: url("../img/hiking.jpg");
+    }
+
+    div.skiing_bg_image {
+        background-position-y: -150px;
+        background-image: url("../img/freeride.jpg");
+    }
+
+    div.lodge_bg_image {
+        background-position-y: -150px;
+        background-image: url("../img/cabin.jpg");
+    }
+
+    div.trailing_bg_image {
+        background-position: bottom;
+        height: 100vh;
+        bottom: 0;
+        background-image: url("../img/trail.jpg");
+    }
+}
+
+
+@media only screen and (max-width: 425px), (max-height: 700px) and (max-width: 700px){
+    /*WRAPPERS*/
+    div.content_wrapper {
+        position: relative;
+        height: 100vh;
+    }
+
+    div.content_wrapper_first {
+        height: 100vh;
+    }
+
+
+    div.hiking_text_wrapper {
+        float: none;
+        margin-left: 0;
+    }
+
+    div.skiing_left_text_wrapper {
+        float: none;
+        margin-left: 0;
+    }
+
+    div.skiing_right_text_wrapper {
+        float: none;
+        margin-right: 0;
+    }
+
+    div.lodging_text_wrapper {
+        float: none;
+        margin-right: 0;
+    }
+
+    div.lodging_text_wrapper,
+    div.hiking_text_wrapper,
+    div.skiing_left_text_wrapper,
+    div.skiing_right_text_wrapper,
+    div.trailing_text_wrapper {
+        border-radius: 0;
+        bottom: 0;
+        top: auto;
+        background: rgba(255, 255, 255, 1);
+        padding: 20px;
+        width: 100vw;
+        max-width: 100%;
+        position: absolute;
+        box-sizing: border-box;
+    }
+
+
+    /*TEXT*/
+    h2.hiking_second_box_header {
+        font-size: 18px;
+        margin: 0;
+    }
+
+    h2.skiing_left_box_header,
+    h2.skiing_right_box_header,
+    h2.hiking_box_header,
+    h2.lodging_box_header,
+    h2.trailing_text_box_header {
+        font-size: 20px;
+        margin: 0;
+    }
+
+
+    p.lodging_box_para,
+    p.hiking_box_para,
+    p.trailing_text_box_para,
+    p.skiing_left_box_para,
+    p.skiing_right_box_para {
+        margin: 0 0 5px 0;
+        font-size: 12px;
+    }
+
+
+    /*IMAGES*/
+    div.hiking_bg_image,
+    div.skiing_bg_image,
+    div.lodge_bg_image,
+    div.trailing_bg_image {
+        height: 100vh;
+        min-width: 100vw;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: static;
+    }
+
+    div.hiking_bg_image {
+        background-position-y: -180px;
+        background-position-x: -450px;
+
+
+        background-image: url("../img/hiking.jpg");
+    }
+
+    div.skiing_bg_image {
+        /*background-position-y: -150px;*/
+        background-image: url("../img/freeride.jpg");
+    }
+
+    div.lodge_bg_image {
+        /*background-position-y: -150px;*/
+        background-image: url("../img/cabin.jpg");
+    }
+
+    div.trailing_bg_image {
+        background-position: bottom;
+        height: 100vh;
+        bottom: 0;
+        background-image: url("../img/trail.jpg");
+    }
+}
+
+@media only screen and (max-width: 400px) and (min-height: 800px) {
+    div.hiking_bg_image {
+        background-position-y: -280px;
+        background-position-x: -610px;
+    }
+}
+@media only screen and (max-width: 420px) and (min-height: 700px) {
+    div.hiking_bg_image {
+        background-position-y: -100px;
+        background-position-x: -610px;
+    }
+}
+
+@media only screen and (min-width: 800px) and (min-height: 1000px) and (max-width: 1000px) and (min-height: 1000px) {
+    div.hiking_bg_image {
+        background-position-x: -1230px;
+    }
+}
+@media only screen and (min-width: 700px) and (max-height: 650px){
+    div.hiking_bg_image {
+        background-position: right bottom;
+    }
+}
+@media only screen and (min-width: 800px) and (min-height: 1000px) {
+    div.trailing_bg_image {
+        bottom: -23px;
+    }
 }
