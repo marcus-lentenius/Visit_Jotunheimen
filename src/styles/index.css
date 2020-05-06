@@ -47,15 +47,17 @@ div.category_skiing_wrapper:hover {
     cursor: pointer;
 }
 
-div.category_hiking_wrapper,
-div.category_lodging_wrapper,
-div.category_forest_wrapper,
-div.category_skiing_wrapper {
-    background-size: cover;
-    background-position: center;
-    margin: 0 5px 10px 5px;
-    position: relative;
-    transition: opacity .2s ease-in-out;
+@media (min-width: 577px) {
+    div.category_hiking_wrapper,
+    div.category_lodging_wrapper,
+    div.category_forest_wrapper,
+    div.category_skiing_wrapper {
+        background-size: cover;
+        background-position: center;
+        margin: 0 5px 10px 5px;
+        position: relative;
+        transition: opacity .2s ease-in-out;
+    }
 }
 
 div.category_lodging_wrapper {
@@ -99,4 +101,22 @@ h2.category_header {
 p.category_paragraph {
     font-size: 14px;
     margin: -4px 0 0 0;
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .row {
+        margin: 0;
+    }
+
+    .category_hiking_wrapper,
+    .category_skiing_wrapper,
+    .category_lodging_wrapper,
+    .category_forest_wrapper {
+        margin: 5px 0;
+    }
 }
